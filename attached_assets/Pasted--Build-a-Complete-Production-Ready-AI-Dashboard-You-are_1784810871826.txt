@@ -1,0 +1,266 @@
+# Build a Complete Production-Ready AI Dashboard
+
+You are a senior full-stack engineer and UI/UX designer.
+
+Build a complete, modern, production-quality web application using:
+
+* React + Vite
+* Tailwind CSS
+* React Router
+* Axios
+* Lucide React icons
+* Framer Motion for animations
+
+## Objective
+
+Create a responsive AI dashboard that will later connect to an Azure AI Agent.
+
+The Azure agent is NOT ready yet, so build the application using mock responses, but structure everything so I only need to replace the API endpoint later.
+
+---
+
+## Design Requirements
+
+Create a premium UI inspired by Stripe, Linear, Vercel, Microsoft Copilot, and ChatGPT.
+
+The design should be:
+
+* Modern
+* Clean
+* Professional
+* Responsive
+* Accessible
+* Minimal but visually attractive
+
+Use:
+
+* Rounded cards
+* Soft shadows
+* Good spacing
+* Smooth animations
+* Beautiful typography
+* Light theme
+* Loading skeletons
+* Toast notifications
+* Empty states
+* Error states
+
+---
+
+## Folder Structure
+
+Create a clean folder structure.
+
+Example:
+
+* src/components
+* src/pages
+* src/layouts
+* src/services
+* src/hooks
+* src/context
+* src/utils
+* src/assets
+* src/styles
+
+---
+
+## Pages
+
+Create:
+
+* Login
+* Dashboard
+* Chat
+* Analytics
+* Upload Documents
+* History
+* Settings
+* 404 Page
+
+---
+
+## Dashboard
+
+Include:
+
+* Sidebar
+* Top Navigation
+* User Profile
+* Notification Icon
+* AI Status Card
+* Recent Requests
+* Analytics Cards
+* Activity Timeline
+* Charts (placeholder)
+* Recent Documents
+
+---
+
+## Chat Page
+
+Create a ChatGPT-like interface.
+
+Include:
+
+* Conversation history
+* Chat bubbles
+* Auto scrolling
+* Typing indicator
+* Loading animation
+* Copy response button
+* Clear conversation
+* Regenerate response
+
+---
+
+## Upload Page
+
+Allow:
+
+* Drag & Drop upload
+* File picker
+* PDF
+* DOCX
+* CSV
+* Images
+
+Show:
+
+* Upload progress
+* Success state
+* Error state
+* File preview
+
+---
+
+## API Layer
+
+Create an API service.
+
+Example:
+
+services/api.js
+
+All backend calls must go through this file.
+
+Create functions such as:
+
+* sendMessage()
+* uploadDocument()
+* getAnalytics()
+* getHistory()
+
+Use Axios.
+
+The base URL must come from an environment variable.
+
+Example:
+
+VITE_API_BASE_URL
+
+---
+
+## Backend Integration
+
+Use mock data initially.
+
+Design the code so changing only:
+
+VITE_API_BASE_URL
+
+or the endpoint URL is enough to connect to the real Azure backend.
+
+Do NOT hardcode URLs.
+
+---
+
+## State Management
+
+Use React Context or Zustand.
+
+Manage:
+
+* User
+* Authentication
+* Chat
+* Loading
+* API errors
+* Uploaded files
+
+---
+
+## Error Handling
+
+Handle:
+
+* Network failure
+* Timeout
+* Invalid response
+* Empty response
+* Unauthorized request
+
+Display proper UI for every error.
+
+---
+
+## Loading States
+
+Create:
+
+* Skeleton loaders
+* Spinner
+* Progress bars
+* Disabled buttons while loading
+
+---
+
+## Environment Variables
+
+Create:
+
+.env.example
+
+Include:
+
+VITE_API_BASE_URL=
+
+VITE_API_KEY=
+
+Do not hardcode secrets.
+
+---
+
+## Mock API
+
+Until the Azure backend is available, return mock JSON responses.
+
+The code should be easy to replace with real API calls.
+
+---
+
+## Code Quality
+
+Write:
+
+* Clean code
+* Reusable components
+* Modular architecture
+* Comments where appropriate
+* Consistent naming
+
+---
+
+## Final Requirement
+
+The project must run successfully with:
+
+npm install
+
+npm run dev
+
+There should be no compilation errors.
+
+Generate the complete application, all folders, all files, all components, and all required configuration files.
+
+The application should be fully ready for backend integration. Once the Azure team provides the API endpoint and request/response format, only the API service file should need modification.
